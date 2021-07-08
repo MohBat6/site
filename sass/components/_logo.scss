@@ -1,0 +1,27 @@
+.logo {
+  display: flex;
+
+  color: $primary-title-color;
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  line-height: 1.16;
+  font-size: 24px;
+  letter-spacing: 0.03em;
+
+  @media screen and (max-width: $max-mobile) {
+    display: block;
+    // padding-top: 10px;
+    // padding-bottom: 10px;
+    // height: auto;
+    width: 80px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    font-size: 26px;
+    line-height: 1.19;
+  }
+}
+
+.logo-beginning {
+  color: $accent-color;
+}

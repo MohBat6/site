@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Химчистка мягкой мебели</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap">
+        
+        <link rel="stylesheet" href="./css/main.min.css">
+    </head>
+
+    <body>
+
+        <!--Шапка сайта-->
+        <header class="page-header">
+            <div class="container">
+                <a href="index.html" class="logo"> <img class="logo-beginning" src="images/desktop/2x/logo.jpg" alt="logo" width="130"></a>
+                <button 
+                    type="button" 
+                    class="mobile-button" 
+                    aria-expanded="false" 
+                    aria-controls="menu-container"
+                    data-menu-button>
+                    <svg class="menu-svg" width="40px" height="40px" aria-label="Переключатель мобильного меню">
+                        <use class="icon-cross" href="./images/sprite.svg#close-menu-icon"></use>
+                        <use class="icon-menu" href="./images/sprite.svg#menu-icon"></use>
+                    </svg>
+                </button>
+                <div class="header-overlya" id="menu-container" data-menu>
+                    <ul class="site-nav">
+                        <li class="item"><a href="index.html" class="list-item active">Главная</a></li>
+                        <li class="item"><a href="portfolio.html" class="list-item">Портфолио</a></li>
+                        <li class="item"><a href="price.html" class="list-item">Цены</a></li>
+                    </ul>
+                    
+                    <!--Почта и телефон-->
+                    
+                    <ul class="communication">
+                        <li class="link-item header">
+                            <a href="https://www.instagram.com/4isto_v_dome/" target="_blank" class="social-link">
+                                <svg class="pin">
+                                    <use href="./images/sprite.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="link-item header">
+                            <a href="https://www.facebook.com/4isto.V.dome" target="_blank" class="social-link">
+                                <svg class="pin">
+                                    <use href="./images/sprite.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                         <li class="communication-item">
+                            <a href="tel:+380996364366" class="mail-phone">
+                                <svg class="phone-icon">
+                                    <use href="./images/sprite.svg#viber"></use>
+                                </svg>
+                                +38 (099) 636 43 66
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <main>
+
+            <!--Герой-->
+            <section class="hero">
+                <div class="overlya">
+                    <h1 class="slogan">выездная химчистка мягкой мебели <br /> матрасов и ковров <br> в киеве и пригороде </h1>
+                </div>
+            </section>
+
+            <!--Преимущества-->
+            <section class="features">
+                <div class="features-container">
+                    <h2 class="activitys-title">Почему мы</h2>
+                    <ul class="features-list">
+                        <li class="item">
+                            <div class="icon-area">
+                                <svg class="icon">
+                                    <use href="./images/sprite.svg#icon-antenna"></use>
+                                </svg>
+                            </div>
+                            <h3 class="features-title">Внимание к деталям</h3>
+                            <p class="feature-description">
+                                Приделяем внимание каждой детали, подбирая нужную химию для конкретной задачи.
+                            </p>
+                        </li>
+                        <li class="item">
+                            <div class="icon-area">
+                                <svg class="icon">
+                                    <use href="./images/sprite.svg#icon-clock"></use>
+                                </svg>
+                            </div>
+                            <h3 class="features-title">Пунктуальность</h3>
+                            <p class="feature-description">
+                                Приезжаем вовремя. Планируем свой график, чтобы экономить Ваше время.
+                            </p>
+                        </li>
+                        <li class="item">
+                            <div class="icon-area">
+                                <svg class="icon">
+                                    <use href="./images/sprite.svg#icon-diagram"></use>
+                                </svg>
+                            </div>
+                            <h3 class="features-title">Ответственность</h3>
+                            <p class="feature-description">
+                                Работаем не на количество, а на качество. Проводим все этапы чистки, чтобы сохранить ткань Вашей мебели.
+                            </p>
+                        </li>
+                        <li class="item">
+                            <div class="icon-area">
+                                <svg class="icon">
+                                    <use href="./images/sprite.svg#icon-astronaut"></use>
+                                </svg>
+                            </div>
+                            <h3 class="features-title">Современные технологии</h3>
+                            <p class="feature-description">Используем лучшую на сегодняшний день химию производства США. Не имеет резких запахов, безопасна, гипоалергенна. Работаем оборудованием производителя Karcher.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!--Чем мы занимаемся-->
+            <section class="activitys">
+                <div class="activitys-container">
+                    <h2 class="activitys-title">Чем мы занимаемся</h2>
+                    <ul class="activity-list">
+                        <li class="item">
+                            <img
+                                 srcset="
+                                  images/desktop/1x/divan@1x.jpg 1x,
+                                  images/desktop/2x/divan@2x.jpg 2x
+                                 " 
+                                 src="images/desktop/1x/divan@1x.jpg" 
+                                 alt="чистка мебели" 
+                                 width="370" 
+                                 height="294"
+                                >
+                           <div class="activity-overlya">
+                                <h3>Мягкая мебель</h3>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <img 
+                                 srcset="
+                                 images/desktop/1x/matras@1x.jpg 1x,
+                                 images/desktop/2x/matras@2x.jpg 2x,
+                                 "
+                                 src="images/desktop/1x/matras@1x.jpg" 
+                                 alt="Чистка матрасов" 
+                                 width="370" 
+                                 height="294"
+                                >
+                            <div class="activity-overlya">
+                                <h3>Матрасы</h3>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <img 
+                                 srcset="
+                                 images/desktop/1x/kover@1x.jpg 1x,
+                                 images/desktop/2x/kover@2x.jpg 2x
+                                 "
+                                 src="images/desktop/1x/kover@1x.jpg" 
+                                 alt="чистка ковров" 
+                                 width="370" 
+                                 height="294"
+                                >
+                            <div class="activity-overlya">
+                                <h3>Ковролин / Ковры(короткий ворс)</h3>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!--Наша команда-->
+            <section class="page-team">
+                <div class="team-container">
+                    <h2 class="activitys-title">Зачем нужна химчистка?</h2>
+                    <div class="kreslo-block">
+                        <img class="kreslo-img" src="images/desktop/2x/himchistka-kresel.jpg" width="300" alt="кресло до после чистки">
+                        <p class="text-kreslo">
+                            При помощи химчистки с обивки диванов удаляются пятна, засаленности, чернила, краски и многие другие виды загрязнений в том числе и неприятные запахи. Очищенная поверхность становится значительно ярче и светлее, и выглядит как новая, при том случаи если диван окончательно не запущен. Чистка диванов особенно необходима людям с заболеваниями дыхательных путей, ведь пыль и шерсть животных, которые скапливаются на поверхности мебели и проникают в ее обивку, создают благоприятные условия для размножения домашнего клеща. Почему стоит заказывать химчистку, а не выводить пятна самостоятельно? При самостоятельной чистке обивка может быть испорчена из-за применения неподходящей химии или народных средств. Например, она может деформироваться или выцвести, нередко материал покрывается неаккуратными разводами. Иногда после попыток выведения пятен в домашних условиях, его уже не получится полностью вывести профессиональными средствами, так как не подходящие средства закрепляют грязь в самой структуре ткани.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!--Постоянные клиенты-->
+            <section class="clients">
+                <div class="clients-container">
+                    <h2 class="activitys-title">Этапы химчистки</h2>
+                    <p class="text-kreslo">
+                        После осмотра мебели, выявления пятен и загрязнений, мастер подбирает нужную химию под конкретную задачу. Далее начинается сам процесс химчистки, который состоит из таких основных этапов:
+                    </p>
+                    <ul class="process-list">
+                        <li class="process-item">
+                            <img src="images/desktop/2x/kofe2.jpg" width="250" alt="пятно">
+                            <p class="process-text">
+                                выведение специфических пятен/загрязнений
+                            </p> 
+                        </li>
+                        <li class="process-item">
+                            <img src="images/desktop/2x/zapah.jpg" width="250" alt="пятно">
+                            <p>
+                            устранение неприятных запахов (при необходимости)
+                        </p>
+                        </li>
+                        <li class="process-item">
+                            <img src="images/desktop/2x/obschaya.jpg" width="250" alt="пятно">
+                            <p>
+                            общая химчистка всей поверхности
+                        </p>
+                        </li>
+                        <li class="process-item">
+                            <img src="images/desktop/2x/himiya.jpg" width="250" alt="пятно">
+                            <p>
+                            нейтрализация химии
+                        </p>
+                        </li>
+                        <li class="process-item">
+                            <img src="images/desktop/2x/kaplya.jpg" width="250" alt="пятно">
+                            <p>
+                            ополаскивание чистой водой
+                        </p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+
+        <!--Футер-->
+        <footer class="page-footer">
+            <div class="footer-container">
+                <div class="tablet-container">
+                    <div class="logo-container"> 
+                        <a href="index.html" class="logo"> <img class="logo-footer" src="images/desktop/2x/logo_finish.png" alt="logo" width="130"></a>
+                        <address class="contact">
+                            <a href="tel:+380996364366" class="mail-phone">
+                                <svg class="phone-icon-footer">
+                                    <use href="./images/sprite.svg#viber"></use>
+                                </svg>
+                                +38 (099) 636 43 66
+                            </a>
+                        </address>
+                    </div>
+                    <div class="link-container">
+                        <b class="invite">Присоединяйтесь</b>
+                        <ul class="border-links">
+                            <li class="link-item footer">
+                                <a href="https://www.instagram.com/4isto_v_dome/" target="_blank" class="social-link">
+                                    <svg class="pin">
+                                        <use href="./images/sprite.svg#icon-instagram"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="link-item footer">
+                                <a href="https://www.facebook.com/4isto.V.dome" target="_blank" class="social-link">
+                                    <svg class="pin">
+                                        <use href="./images/sprite.svg#icon-facebook"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                    <div >
+                        <h4 class="invite">График работы</h4>
+                        <p class="times">
+                            ПН-СБ - 8:00-20:00 <br>
+                            ВС    - 9:00-17:00
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!--Модальное окно-->
+        <div data-modal class="backdrop is-hidden">
+            <div class="modal">
+                <button data-modal-close class="modal-button" >
+                    <svg class="close-icon">
+                        <use href="./images/sprite.svg#icon-close"></use>
+                    </svg>
+                </button>
+
+                <form action="#" method="POST" class="modal-form"> 
+                    <div class="b-class">
+                        <b class="modal-title">Оставьте свои данные, мы вам перезвоним</b>
+                    </div>
+
+                    <ul class="modal-list">
+                        <li class="modal-item">
+                            <label class="label-name" for="name">Имя</label>
+                            <input type="text" name="name" id="name" class="input-area name" >
+                            <span class="modal-icon person-icon">
+                                <svg class="icon-input person">
+                                    <use href="./images/sprite.svg#icon-person"></use>
+                                </svg>
+                            </span>
+                        </li>
+                        <li class="modal-item">
+                            <label class="label-name" for="phone">Телефон</label>
+                            <input type="tel" name="phone" id="phone" class="input-area phone-input">
+                            <span class="modal-icon modalphone-icon">
+                                <svg class="icon-input phone">
+                                    <use href="./images/sprite.svg#icon-phone"></use>
+                                </svg>
+                            </span>
+                        </li>
+                        <li class="modal-item">
+                            <label class="label-name" for="email">Почта</label>
+                            <input type="email" name="email" id="email" class="input-area email-input">
+                            <span class="modal-icon email-icon">
+                                <svg class="icon-input email">
+                                    <use href="./images/sprite.svg#icon-email"></use>
+                                </svg>
+                            </span>
+                        </li>
+                        <li class="modal-item">
+                            <label class="label-name">
+                                Комментар
+                                <textarea class="textarea-field" name="comment" rows="5" cols="45" placeholder="Введите текст"></textarea>
+                            </label>
+                        </li>
+                    </ul>
+
+                    <label class="confirm-label">
+                        <input class="confirm-input" type="checkbox" name="confirm">
+                        <span class="check-area"></span>
+                        Соглашаюсь с рассылкой и <br class="br">принимаю 
+                        <a class="contract-conditions" href="#"><span class="underline">Условия договора</span></a>
+                    </label>
+
+                    <button type="submit" class="submit-button">Отправить</button>
+                </form>
+            </div>
+        </div>
+      <!-- <script src="./js/modal.js"></script> -->
+      <script src="./js/mobile-menu.js"></script>
+    </body>
+
+</html>

@@ -1,0 +1,325 @@
+.page-footer {
+  background-color: $alternative-bg-color;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and (max-width: $max-mobile) {
+    padding-top: 20px;
+  padding-bottom: 20px;
+  }
+}
+
+.footer-container {
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    // align-items:center;
+  }
+  @media screen and (max-width: $max-mobile) {
+    display: block;
+    }
+  @extend %container;
+}
+
+.tablet-container {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    align-items:flex-start;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 700px;
+  }
+}
+
+.logo-container {
+  @media screen and (max-width: $max-tablet) {
+    text-align: center;
+  }
+  @media screen and (max-width: $max-mobile) {
+  height: 120px;
+  }
+}
+
+.footer-logo {
+  font-family: Raleway, sans-serif;
+  color: $primary-bg-color;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+
+  @media screen and (max-width: $max-tablet) {
+    font-size: 24px;
+    line-height: 1.17;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 26px;
+    line-height: 1.19;
+  }
+  @media screen and (max-width: $max-mobile) {
+    height: auto;
+    }
+}
+
+.contact {
+  margin: 0;
+  margin-top: 20px;
+  padding: 0;
+
+  color: $primary-bg-color;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+
+.contacts-list {
+  margin: 0;
+  padding: 0;
+}
+
+.contacts-list .item {
+  @media screen and (max-width: $max-tablet) {
+    margin-top: 8px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-top: 9px;
+  }
+}
+
+.contact .mail-phone {
+  // margin: 0;
+  // padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+
+  @media screen and (max-width: $max-tablet) {
+    // display: block;
+  }
+  @media screen and (max-width: $max-mobile) {
+    
+    color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-weight: 700;
+    }
+}
+
+/* Соц сети*/
+
+.link-container {
+  @media screen and (max-width: $max-tablet) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 21px;
+  }
+
+  @media screen and (min-width: $tablet) and (max-width: $max-tablet) {
+    // margin-left: 165px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-left: 100px;
+  }
+  @media screen and (max-width: $max-mobile) {
+ align-items: center;
+  flex-direction: row;
+ margin-top: 10px;
+ 
+ height: 35px;
+    }
+    @media screen and (min-width: $desktop) {
+      margin: 21px 0 0 0;
+    }
+}
+
+.invite {
+  text-transform: uppercase;
+
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  color: $primary-bg-color;
+}
+
+.border-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  margin-top: 20px;
+  padding: 0;
+  @media screen and (max-width: $max-mobile) {
+    margin: 0 0 0 10px;
+    }
+  
+}
+
+.border-links .link-item + .link-item {
+  margin-left: 10px;
+  
+}
+
+.footer .social-link {
+  @extend %social-link;
+
+  background-color: rgba(255, 255, 255, 0.1);
+  color: $primary-bg-color;
+}
+
+.footer .social-link:focus,
+.footer .social-link:hover {
+  background-color: $accent-color;
+}
+
+.pin {
+  @extend %pin;
+}
+
+/* Подписка */
+
+.form-container {
+  @media screen and (max-width: $max-tablet) {
+    margin-top: 60px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-left: auto;
+  }
+}
+
+.footer-form {
+  @media screen and (max-width: $max-tablet) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+  }
+}
+
+.subscribe-title {
+  display: block;
+  margin-bottom: 20px;
+
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: $primary-white-text-color;
+
+  text-transform: uppercase;
+}
+
+.input-container {
+  @media screen and (max-width: $max-tablet) {
+    width: 100%;
+    text-align: center;
+  }
+
+  @media screen and (min-width: $start-mobile) and (max-width: $max-tablet) {
+    width: 450px;
+  }
+}
+
+.footer-input {
+  height: 50px;
+
+  padding: 15px 16px;
+
+  color: $primary-bg-color;
+
+  background-color: transparent;
+  border: 1px solid $input-footer-border-color;
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px $input-footer-filter-color);
+  border-radius: 4px;
+
+  @media screen and (max-width: $max-mobile) {
+    width: 100%;
+  }
+
+  @media screen and (min-width: $start-mobile) and (max-width: $max-tablet) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 358px;
+    margin-right: 12px;
+  }
+}
+
+.footer-input::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+
+  color: $input-footer-placeholder-color;
+}
+
+.subscribe-button {
+  display: flex;
+
+  width: 200px;
+  height: 50px;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 29px;
+  padding-right: 8px;
+
+  background: $accent-color;
+  box-shadow: 0px 4px 4px $button-footer-border-color;
+  border-radius: 4px;
+  border-color: transparent;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+
+  color: $primary-white-text-color;
+
+  @media screen and (max-width: $max-tablet) {
+    margin-top: 20px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    align-items: center;
+  }
+}
+
+.subscribe-button::after {
+  content: "";
+  display: inline-block;
+
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+
+  background-color: $accent-color;
+  background-image: url(../images/icon-send.svg);
+  background-size: 24px 24px;
+}
+.times {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+margin: 0;
+  color: $input-footer-placeholder-color;
+}

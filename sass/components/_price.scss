@@ -1,0 +1,157 @@
+.price-item {
+  display: flex;
+  height: auto;
+    // border: 1px solid black;
+    box-shadow: 0px 1px 3px rgba(153, 70, 70, 0.12),
+    4px 5px 1px rgba(0, 0, 0, 0.14), 1px 2px 1px rgba(0, 0, 0, 0.2);
+    
+  
+    @media screen and (max-width: $max-mobile) {
+      
+      width: calc((100% - 40px) / 2);
+      // height: auto;
+      margin: 7px;
+      // margin-bottom: 30px;
+  
+      .price-item .item:last-child {
+        margin: 0;
+      }
+    }
+  
+    @media screen and (min-width: $start-mobile) {
+      width: 450px;
+      margin: 15px;
+    }
+  
+    @media screen and (min-width: $tablet) {
+      width: calc((100% - 90px) / 3);
+      margin: 10px;
+    }
+  
+    @media screen and (min-width: $desktop) {
+      width: calc((100% - 100px) / 4);
+      height: auto;
+      margin: 7px;
+    }
+  }
+ 
+  .content {
+      margin-top: 8px 0 0 0;
+      padding: 0 8px 0 8px;
+  }
+  .price-description {
+    margin: 0;
+    margin-top: 4px;
+  
+    color: $accent-color;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.9;
+    letter-spacing: 0.03em;
+    @media screen and (max-width: $max-mobile) {
+      font-size: 15px;
+    }
+  }
+  .price-title {
+    margin: 0;
+    padding: 0;
+  
+    color: $primary-title-color;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    text-align: left;
+    @media screen and (max-width: $max-mobile) {
+      line-height: 1.19;
+    }
+  }
+  .price-title-list {
+    margin: 0;
+      text-align: center;
+  }
+  .price-title-list2 {
+    text-align: center;
+    margin-top: 70px;
+    @media screen and (max-width: $max-mobile) {
+      margin-top: 20px;
+    }
+    @media screen and (max-width: $max-tablet) {
+     margin: 20px 0;
+    }
+}
+.price-title-list3 {
+    text-align: center;
+    margin-top: 20px;
+}
+  .price-section {
+    @media screen and (max-width: $max-tablet) {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+    
+  @media screen and (min-width: $desktop) {
+    padding-top: 35px;
+    padding-bottom: 109px;
+  }
+  @media screen and (max-width: $max-mobile) {
+    padding-top: 20px;
+  }
+}
+.zapah {
+    padding-top: 80px;
+    @media screen and (max-width: $max-mobile) {
+      padding-top: 30px;
+    }
+}
+.price-container {
+  @extend %container;
+  display: flex;   
+    flex-wrap: wrap;
+    padding: 0;
+    
+  @media screen and (max-width: $max-mobile) {
+    
+  }
+
+  @media screen and (min-width: $tablet) {
+    padding-bottom: 30px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    
+    padding-bottom: 50px;
+  }
+}
+.matras {
+  @media screen and (max-width: $max-mobile) {
+  margin: 0;
+  padding: 0;
+  }
+}
+.matras li {
+  @media screen and (max-width: $max-mobile) {
+  font-size: 13.5px;
+  }
+}
+.price-position::before {
+  @media screen and (max-width: $max-mobile) {
+  content: "";
+  display: inline-block;
+
+  width: 24px;
+  height: 24px;
+  // margin-left: 10px;
+
+  // background-color: $accent-color;
+  background-image: url(../images/droplet.svg);
+  fill:  rgb(1, 150, 250);
+  background-size: contain;
+}
+}
+.container-matras {
+  @extend %container;
+}
+.price-container-title {
+  text-align: center;
+}

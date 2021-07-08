@@ -1,0 +1,187 @@
+.page-team {
+  background-color: $section-bg-color;
+
+  @media screen and (max-width: $max-tablet) {
+    // padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding-top: 94px;
+    // padding-bottom: 94px;
+  }
+  @media screen and (max-width: $max-mobile) {
+    
+    padding-bottom: 0;
+  }
+}
+
+.team-container {
+  @extend %container;
+}
+
+.team-title {
+  @extend %title;
+}
+
+.emloyees-list {
+  padding: 0;
+  margin: 0;
+
+  @media screen and (min-width: $tablet) and (max-width: $max-tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+  }
+}
+
+.emloyees-list .employee-item + .employee-item {
+  @media screen and (max-width: $max-mobile) {
+    margin-top: 30px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-left: 30px;
+  }
+}
+
+.employee-item {
+  display: block;
+  background-color: $primary-bg-color;
+  text-align: center;
+
+  @media screen and (min-width: $tablet) and (max-width: $max-tablet) {
+    width: calc((100% - 60px) / 2);
+    margin: 15px;
+  }
+
+  @media screen and (max-width: $max-tablet) {
+    padding-bottom: 24px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding-bottom: 30px;
+  }
+
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  box-shadow: 0px 1px 3px rgba(153, 70, 70, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.employee {
+  @include transition(color);
+
+  color: $primary-title-color;
+  font-weight: 500;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+
+.employee-container {
+  padding-top: 30px;
+}
+
+.employee-name {
+  @include transition(color);
+
+  padding: 0;
+  margin: 0;
+
+  font-weight: 500;
+  font-size: 16px;
+
+  color: $primary-title-color;
+}
+
+.employee-name:hover {
+  color: inherit;
+}
+
+.employee:focus {
+  outline: none;
+}
+
+.employee:hover {
+  color: $accent-color;
+}
+
+.employee-position {
+  margin: 0;
+  margin-top: 10px;
+  padding: 0;
+
+  color: $primary-text-color;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.link-list {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  margin-top: 16px;
+}
+
+.link-list .link-item + .link-item {
+  margin-left: 10px;
+}
+
+.social-link {
+  @extend %social-link;
+}
+
+.social-link:focus,
+.social-link:hover {
+  background-color: $accent-color;
+  color: $primary-white-text-color;
+}
+
+.pin {
+  @extend %pin;
+}
+
+.kreslo-block  {
+  display: flex;
+  @media screen and (min-width: $tablet) and (max-width: $max-tablet) {
+ 
+  }
+
+  @media screen and (max-width: $max-tablet) {
+// display: inline;
+  }
+
+  @media screen and (min-width: $desktop) {
+  
+  }
+  @media screen and (max-width: $max-mobile) {
+    display: block;
+    
+  }
+ }
+ .kreslo-img {
+  margin-right: 30px;
+  height: 100%;
+  @media screen and (max-width: $max-mobile) {
+    display: block;
+    margin: 0;
+    height: 250px;
+    width: auto;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  @media screen and (min-width: $desktop) {
+    
+  }
+  
+ }
+ .text-kreslo {
+   line-height: 1.7;
+   text-align: left;
+ }
